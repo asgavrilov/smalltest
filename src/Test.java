@@ -16,7 +16,7 @@ public class Test {
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
                 int res = array[j] - array[i];
-                prelRes.add(new Result(i, j, res));
+                prelRes.add(new Result(i + 1, j + 1, res));
             }
         }
         return prelRes;
